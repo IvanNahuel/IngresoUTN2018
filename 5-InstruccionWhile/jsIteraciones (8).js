@@ -16,17 +16,18 @@ while (respuesta=='si'){
 		positivo = positivo + numero;
 	} else {
 		negativo = negativo * numero;
+		contador++;
 	}
 
 	respuesta = prompt ("ingrese su respuesta S/N: ");	
 
 }
 
-
-	
-
-
 document.getElementById('suma').value=positivo;
+if (contador==0){
+	negativo=0;
+}
+
 document.getElementById('producto').value=negativo;
 
 }//FIN DE LA FUNCIÓN
