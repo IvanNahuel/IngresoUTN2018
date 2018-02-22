@@ -8,6 +8,24 @@ function Mostrar()
 	var respuesta='si';
 
 
+
+while (respuesta=='si'){
+	numero = parseInt(prompt ("ingrese un numero  "));
+
+	if (numero>=0){
+		positivo = positivo + numero;
+	} else {
+		negativo = negativo * numero;
+	}
+
+	respuesta = prompt ("ingrese su respuesta S/N: ");	
+
+}
+
+
+	
+
+
 document.getElementById('suma').value=positivo;
 document.getElementById('producto').value=negativo;
 
